@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="V logotyp">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2b2116"/>
+      <stop offset="100%" stop-color="#19120c"/>
+    </radialGradient>
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dca4"/>
+      <stop offset="100%" stop-color="#d3a155"/>
+    </linearGradient>
+    <linearGradient id="vGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a056"/>
+      <stop offset="100%" stop-color="#b5481f"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Warm dark badge -->
+  <circle cx="128" cy="128" r="120" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="128" r="116" fill="none" stroke="url(#frameGrad)" stroke-width="5" opacity="0.85" filter="url(#glow)"/>
+
+  <!-- Filled hexagon plate -->
+  <polygon points="128,55 191,91.5 191,164.5 128,201 64,164.5 64,91.5"
+           fill="#251c12" stroke="url(#frameGrad)" stroke-width="6" filter="url(#glow)"/>
+
+  <!-- Solid filled V (terracotta) -->
+  <polygon points="78,92 128,178 178,92 152,92 128,150 104,92"
+           fill="url(#vGrad)" filter="url(#glow)"/>
+  <path d="M104 92 L128 150 L152 92" fill="none" stroke="#f8ecd2" stroke-width="2" opacity="0.6"/>
+
+  <!-- Vertex nodes -->
+  <circle cx="128" cy="55" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+  <circle cx="191" cy="91.5" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+  <circle cx="191" cy="164.5" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+  <circle cx="128" cy="201" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+  <circle cx="64" cy="164.5" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+  <circle cx="64" cy="91.5" r="4" fill="#f6e2b0" filter="url(#glow)"/>
+</svg>
