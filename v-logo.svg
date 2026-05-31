@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="V logotyp">
+  <defs>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7e5f"/>
+      <stop offset="100%" stop-color="#ff4b2b"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Dark circular badge -->
+  <circle cx="128" cy="128" r="120" fill="#0d1117" stroke="#161b22" stroke-width="8"/>
+
+  <!-- Glowing cyan hexagon ring -->
+  <polygon points="128,55 191,91.5 191,164.5 128,201 64,164.5 64,91.5"
+           fill="none" stroke="url(#coreGrad)" stroke-width="14" filter="url(#glow)"/>
+
+  <!-- The V core: bold, sharp-edged, glowing -->
+  <path d="M84 86 L128 178 L172 86" fill="none" stroke="url(#accentGrad)"
+        stroke-width="24" stroke-linejoin="miter" stroke-linecap="butt"
+        stroke-miterlimit="6" filter="url(#glow)"/>
+
+  <!-- White core dot -->
+  <circle cx="128" cy="124" r="7" fill="#ffffff" filter="url(#glow)"/>
+</svg>
