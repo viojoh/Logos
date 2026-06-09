@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10">
+  <!-- Blå bakgrund -->
+  <rect width="16" height="10" fill="#005293" />
+  <!-- Gult kors (horisontellt band) -->
+  <rect y="4" width="16" height="2" fill="#FECB00" />
+  <!-- Gult kors (vertikalt band) -->
+  <rect x="5" width="2" height="10" fill="#FECB00" />
+</svg>
